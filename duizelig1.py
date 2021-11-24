@@ -1,5 +1,5 @@
 i = 30
-while i > -1:
+while i >= 0:
     print(i)
     i -= 1
 

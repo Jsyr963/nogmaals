@@ -3,7 +3,6 @@ a = 2
 while a < 3:
     if Dag == "Maandag":
         print("Maandag")
-        break
     elif Dag == "Dinsdag":
         print("Maandag", "Dinsdag")
         break
@@ -22,3 +21,4 @@ while a < 3:
     elif Dag == "Zondag":
         print("Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag")
         break
+    a = 4
