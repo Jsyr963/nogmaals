@@ -1,14 +1,14 @@
 # name of student: John Youssef
 # number of student: 99067606
-# purpose of program: 
+# purpose of program: berekend waardes
 # function of program:
 # structure of program: 
 
 
 
-toPay = int(float(input('Amount to pay: '))* 100) #
-paid = int(float(input('Paid amount: ')) * 100) #
-change = paid - toPay
+toPay = int(float(input('Amount to pay: '))* 100) #hier wordt gevraagd wat er betaald MOET worden
+paid = int(float(input('Paid amount: ')) * 100) #hier wordt gevraagd met HOEVEEL er betaald wordt
+change = paid - toPay #het bedrag dat betaald moet worden min het bedrag dat betaald is zodat we weten hoeveel er terug gegeven moet worden
 tweeeuro=0
 eeneuro=0
 vijftigcent=0
@@ -19,13 +19,13 @@ tweecent=0
 eencent=0
 
 
-if change > 0: #
-  coinValue = 200 #
+if change > 0: #kijkt of het wisselgeld groter is dan 0
+  coinValue = 200 #waarde van de Coin
   
-  while change > 0 and coinValue > 0: #
-    nrCoins = change // coinValue #
+  while change > 0 and coinValue > 0: #checkt of allebei de coinvalue en het wisselgeld groter dan 0 zijn
+    nrCoins = change // coinValue #berekend aantal coins
 
-    if nrCoins > 0: #
+    if nrCoins > 0: #kijkt of het aantal coins groter is dan 0
       print('return maximal ', nrCoins, ' coins of ', coinValue, ' cents!' ) #
       nrCoinsReturned = int(input('How many coins of ' + str(coinValue) +  ' cents did you return? ')) #
       change -= nrCoinsReturned * coinValue #
@@ -57,7 +57,7 @@ if change > 0: #
     else:
       coinValue = 0
 
-if change > 0: #
+if change > 0: #checkt of het wisselgeld groter is dan 0
   print('Change not returned: ', str(change) + ' cents')
 else:
   print('done')
